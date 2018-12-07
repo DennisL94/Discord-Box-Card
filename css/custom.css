@@ -1,0 +1,75 @@
+/*
+ * Copyright of https://dennislichti.review
+ *
+*/
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+body {
+  background-color: #89cff0;
+}
+
+.container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 170px;
+  box-shadow: 7px 7px 10px rgb(0, 0, 0);
+  border: 2px solid rgb(51, 164, 82);
+  border-radius: 5%;
+}
+
+.container-contents {
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.picture {
+  background-size: 125px 125px;
+  background-image: url("../resources/atom-icon.png");
+  width: 125px;
+  height: 125px;
+}
+
+.name:before {
+  content: '.css#0001';
+  font-family: 'Fredoka One', cursive;
+  font-size: 18px;
+}
+
+.nitro-icon {
+  background-image: url("https://pax.discordapp.com/assets/55f1bc6112a1568e8251e6c1385ac948.svg");
+  background-size: 50px 50px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 105px;
+}
+
+.wumpus-corner {
+  background-size: 85px 85px;
+  background-image: url("https://66.media.tumblr.com/d2fbb6dceab3af92dd6df48593275315/tumblr_p2ma6anKVk1rnv6lfo1_400.gif");
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+
+.wumpus-corner:hover {
+  animation: hide 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+  100% {
+    opacity: 0;
+  }
+}
+
